@@ -17,7 +17,7 @@ node {
    }
    
    stage('Pushing to Atrifcatory'){
-      cd Program\ Files \(x86\)
+      
       sh"cd ./var/lib/docker/volumes/jenkins_home/_data/workspace/SpringDemo/target"
       sh"curl -X PUT -u admin:Capgemini@123 -T BalanceSheetApp-0.0.1-SNAPSHOT.jar 'http://ec2-54-201-29-152.us-west-2.compute.amazonaws.com:8081/artifactory/libs-release-local/nishad/Balance.jar'"
    }
